@@ -13,9 +13,11 @@ export default function Home() {
       <Head>
         <title>{name} - CV</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Curriculum Vitae de Christophe QUENETTE" />
-        <meta name="author" content="Christophe QUENETTE" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content={name +  ' - CV'} key="title"/>
+        <meta property="og:description" content="Curriculum Vitae de Christophe QUENETTE" key="description" />
+        <meta property="og:author" content="Christophe QUENETTE" key="author" />
+        <meta property="og:url" content="https://cv.cmamon.vercel.app/" key="url" />
+        <meta property="og:viewport" content="width=device-width, initial-scale=1.0" key="viewport" />
       </Head>
 
       <main className={styles.main}>
