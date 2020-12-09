@@ -54,10 +54,16 @@ export default function Home() {
               <ul className={styles.column}>
                 <li><b>PHP</b></li>
                 <ul>
-                    <li>POO PHP 7</li>
-                    <li>Symfony (3, 4, 5)</li>
-                    <li>Twig</li>
-                  </ul>
+                  <li>POO PHP 7</li>
+                  <li>Symfony (3, 4, 5)</li>
+                  <li>Twig</li>
+                </ul>
+                <li><b>Bases de données</b></li>
+                <ul>
+                  <li>MySQL</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                </ul>
               </ul>
             </div>
           </div>
@@ -79,6 +85,42 @@ export default function Home() {
         <p className={styles.section}>
           Expériences professionnelles
         </p>
+
+
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <h3>Développeur Fullstack</h3>
+            <div className={styles.card_subtitle}>
+              <b>Acelys Services Numériques, Montpellier, France</b>
+                &nbsp;&mdash;&nbsp; 
+              <b>Février 2020 - Juillet 2020</b>
+            </div>
+            <ul>
+              <li>Stage de fin d'études de 6 mois</li>
+              <li>
+                Développement d'une application de production de rapports sur l'Intégration Continue
+                avec l'application Web Gitlab.com, visant à garantir les bonnes pratiques de
+                développement.
+              </li>
+              <li>Technologies : Symfony 5, Vue.js, MySQL, Vagrant, Docker, Bash</li>
+            </ul>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Développeur Web PHP</h3>
+            <div className={styles.card_subtitle}>
+              <b>BBG Digital, Montpellier, France</b>
+                &nbsp;&mdash;&nbsp; 
+              <b>Juillet 2018 - Septembre 2018</b>
+            </div>
+            <ul>
+              <li>Stage de 3 mois</li>
+              <li>
+                Développement d'une partie du coté back end d'une application Web en utilisant PHP avec Symfony 3 pour l'exploitation de fichiers XML fournis par des Web Services REST ou SOAP.
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <p className={styles.section}>
           Diplômes et Formation
