@@ -27,6 +27,10 @@
   height: 8rem;
 }
 
+.personal_infos {
+  text-align: center;
+}
+
 .sep {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -144,5 +148,31 @@
   .grid {
     width: 100%;
     flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .personal_infos span:nth-of-type(1) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .personal_infos span:nth-of-type(2) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .personal_infos span:nth-of-type(3) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .personal_infos span:last-of-type {
+    display: block;
   }
 }

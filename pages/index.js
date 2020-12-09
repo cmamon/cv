@@ -27,7 +27,7 @@ export default function Home() {
           <p className={styles.description}>
             Développeur Fullstack
           </p>
-          <p>christophe.quenette@gmail.com &nbsp;&mdash;&nbsp; +33 7 50 86 74 89 &nbsp;&mdash;&nbsp; Montpellier, France &nbsp;&mdash;&nbsp; Permis B</p>
+          <p className={styles.personal_infos}><span>christophe.quenette@gmail.com</span> &nbsp;&nbsp; <span>+33 7 50 86 74 89</span> &nbsp;&nbsp; <span>Montpellier, France</span> &nbsp;&nbsp; <span>Permis B</span></p>
         </header>
 
         <hr className={styles.sep} />
@@ -40,31 +40,31 @@ export default function Home() {
           <div className={styles.card}>
             <h3>Technologies du Web</h3>
             <div className={styles.row}>
-              <ul className={styles.column}>
-                <li><b>Javascript</b></li>
-                  <ul>
-                    <li>JQuery</li>
-                    <li>Angular (versions 7, 8)</li>
-                    <li>React, Next.js</li>
-                    <li>Vue.js</li>
-                    <li>Node.js</li>
-                    <li>TypeScript</li>
-                  </ul>
-              </ul>
-              <ul className={styles.column}>
-                <li><b>PHP</b></li>
+              <div className={styles.column}>
+                <b>Javascript</b>
+                <ul>
+                  <li>JQuery</li>
+                  <li>Angular (versions 7, 8)</li>
+                  <li>React, Next.js</li>
+                  <li>Vue.js</li>
+                  <li>Node.js</li>
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+              <div className={styles.column}>
+                <b>PHP</b>
                 <ul>
                   <li>POO PHP 7</li>
                   <li>Symfony (3, 4, 5)</li>
                   <li>Twig</li>
                 </ul>
-                <li><b>Bases de données</b></li>
+                <b>Bases de données</b>
                 <ul>
                   <li>MySQL</li>
                   <li>PostgreSQL</li>
                   <li>MongoDB</li>
                 </ul>
-              </ul>
+              </div>
             </div>
           </div>
 
