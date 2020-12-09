@@ -53,9 +53,12 @@
 }
 
 .footer a {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-  Bitstream Vera Sans Mono, Courier New, monospace;
-  font-size: 1rem;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+footer .social_logo {
+  vertical-align :middle;
 }
 
 .title {
@@ -112,24 +115,28 @@
   margin: 0 0 1rem 0;
 }
 
-.card_title {
+.card_title, .card_subtitle {
   display: flex;
   align-items: center;
 }
 
-.card_subtitle {
-  display: flex;
-  align-items: center;
-}
-
-
-.card img {
+.card .logo_um {
   filter: drop-shadow(0 0 1px black);
 }
 
 .card p {
   margin: 0;
   line-height: 2rem;
+}
+
+.card ul {
+  list-style-type: '🖖🏽';
+  padding-inline-start: 1ch;
+}
+
+.card li {
+  padding-inline: 1ch;
+  margin-inline-end: 1ch;
 }
 
 .logo {

@@ -13,6 +13,9 @@ export default function Home() {
       <Head>
         <title>{name} - CV</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Curriculum Vitae de Christophe QUENETTE" />
+        <meta name="author" content="Christophe QUENETTE" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <main className={styles.main}>
@@ -47,7 +50,7 @@ export default function Home() {
                   <li>Angular (versions 7, 8)</li>
                   <li>React, Next.js</li>
                   <li>Vue.js</li>
-                  <li>Node.js</li>
+                  <li>Node.js, Express.js</li>
                   <li>TypeScript</li>
                 </ul>
               </div>
@@ -132,7 +135,7 @@ export default function Home() {
             <div className={styles.card_subtitle}>
               <b>Université de Montpllier</b>
                 &nbsp;
-                <img src="/images/logo-um.png" width="30px"></img>
+                <img className={styles.logo_um} src="/images/logo-um.png" width="30px"></img>
                 &nbsp;&mdash;&nbsp; 
               <b>Septembre 2018 - Juillet 2020</b>
             </div>
@@ -145,7 +148,7 @@ export default function Home() {
             <div className={styles.card_subtitle}>
               <b>Université de Montpllier</b>
                 &nbsp;
-                <img src="/images/logo-um.png" width="30px"></img>
+                <img className={styles.logo_um} src="/images/logo-um.png" width="30px"></img>
                 &nbsp;&mdash;&nbsp; 
               <b> Septembre 2015 - Juillet 2018</b>
             </div>
@@ -214,16 +217,16 @@ export default function Home() {
             <div className={styles.card_subtitle}>
               <b>Anglais :</b>
               &nbsp;&nbsp; 
-              <img src="/images/plus.svg" width="20px"></img>&nbsp;
-              <img src="/images/plus.svg" width="20px"></img>&nbsp;
-              <img src="/images/plus.svg" width="20px"></img>&nbsp;&nbsp;&mdash;&nbsp; 
+              <img src="/images/plus.svg" width="19px"></img>&nbsp;
+              <img src="/images/plus.svg" width="19px"></img>&nbsp;
+              <img src="/images/plus.svg" width="19px"></img>&nbsp;&nbsp;&mdash;&nbsp; 
               <p>Conversationnel</p>
             </div>
             <div className={styles.card_subtitle}>
               <b>Espagnol :</b>
               &nbsp;&nbsp; 
-              <img src="/images/plus.svg" width="20px"></img>&nbsp;
-              <img src="/images/plus.svg" width="20px"></img>&nbsp;&nbsp;&mdash;&nbsp; 
+              <img src="/images/plus.svg" width="19px"></img>&nbsp;
+              <img src="/images/plus.svg" width="19px"></img>&nbsp;&nbsp;&mdash;&nbsp; 
               <p>Niveau scolaire</p>
             </div>
           </div>
@@ -231,18 +234,18 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>
+        <p>  
           <a href="https://github.com/cmamon">
-            <img id="github-logo" src="/images/github-mark-64px.png"></img>
+            <img className={styles.social_logo} id="github-logo" src="/images/github-mark-64px.png"></img>
             {'  '}https://github.com/cmamon
           </a>
         </p>
         <p>
           <a href="https://www.linkedin.com/in/christophe-quenette">
-            <img id="linkedin-logo" src="/images/linkedin-logo.png"></img>
+            <img className={styles.social_logo} id="linkedin-logo" src="/images/linkedin-logo.png"></img>
             {'  '}@christophe-quenette
-          </a> 
-        </p>
+          </a>
+        </p>   
       </footer>
     </div>
   )
