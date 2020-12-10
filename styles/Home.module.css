@@ -130,7 +130,7 @@ footer .social_logo {
 }
 
 .card ul {
-  list-style-type: '🖖🏽';
+  list-style-type: '⇝';
   padding-inline-start: 1ch;
 }
 
@@ -157,6 +157,12 @@ footer .social_logo {
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
   }
 }
 
