@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 import Spinner from '../components/Spinner'
 import styles from '../styles/Home.module.css'
-import utilStyles from '../styles/utils.module.css'
 
 const name = 'Christophe QUENETTE'
 
@@ -16,6 +14,7 @@ export default function Home() {
         <meta property="og:title" content={name +  ' - CV'} key="title"/>
         <meta property="og:description" content="Curriculum Vitae de Christophe QUENETTE" key="description" />
         <meta property="og:author" content="Christophe QUENETTE" key="author" />
+        <meta property="og:image" content="https://cv.cmamon.vercel.app/images/profile-image.jpg" />
         <meta property="og:url" content="https://cv.cmamon.vercel.app/" key="url" />
         <meta property="og:viewport" content="width=device-width, initial-scale=1.0" key="viewport" />
       </Head>
@@ -23,8 +22,8 @@ export default function Home() {
       <main className={styles.main}>
         <header className={styles.header}>
           <img
-            src="/images/photo-cv.jpg"
-            className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+            src="/images/profile-image.jpg"
+            className={`${styles.headerImage} ${styles.borderCircle}`}
             alt={name}
           />
           
