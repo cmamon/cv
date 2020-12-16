@@ -9,14 +9,14 @@ class Spinner extends React.Component {
     return (
       <>
         <div className="lds-hourglass">
-          <div></div><div></div><div></div><div></div>
+          <div /><div /><div /><div />
         </div>
         <style jsx>
           {`
             .lds-hourglass {
               display: inline-block;
-              width: 60px;
-              height: 60px;
+              width: 45px;
+              height: 45px;
             }
             
             .lds-hourglass:after {
@@ -27,9 +27,9 @@ class Spinner extends React.Component {
               height: 0;
               margin: 10px;
               box-sizing: border-box;
-              border: 12px solid yellowgreen;
+              border: 10px solid yellowgreen;
               border-color: yellowgreen transparent yellowgreen transparent;
-              animation: lds-hourglass 2.3s infinite;
+              animation: lds-hourglass 2.7s infinite;
             }
             
             @keyframes lds-hourglass {

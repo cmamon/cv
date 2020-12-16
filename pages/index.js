@@ -135,9 +135,9 @@ export default function Home() {
             <h3>Master Informatique</h3>
             <div className={styles.card_subtitle}>
               <b>Université de Montpllier</b>
-                &nbsp;
-                <img className={styles.logo_um} src="/images/logo-um.png" width="30px"></img>
-                &nbsp;&mdash;&nbsp; 
+              &nbsp;
+              <img className={styles.logo_um} src="/images/logo-um.png" width="30px"></img>
+              &nbsp;&mdash;&nbsp; 
               <b>Septembre 2018 - Juillet 2020</b>
             </div>
             <p>Master informatique parcours Architecture et Ingénierie du logiciel et du Web</p>
@@ -148,9 +148,9 @@ export default function Home() {
             <h3>Licence Informatique</h3>
             <div className={styles.card_subtitle}>
               <b>Université de Montpllier</b>
-                &nbsp;
-                <img className={styles.logo_um} src="/images/logo-um.png" width="30px"></img>
-                &nbsp;&mdash;&nbsp; 
+              &nbsp;
+              <img className={styles.logo_um} src="/images/logo-um.png" width="30px"></img>
+              &nbsp;&mdash;&nbsp; 
               <b> Septembre 2015 - Juillet 2018</b>
             </div>
             <p>Licence informatique généraliste</p>
@@ -171,16 +171,25 @@ export default function Home() {
 
             <p>
               <b>Client: </b> Application créée avec le framework React Next.js.
-            </p> 
-            <a href="https://github.com/cmamon/nimble-hub-client">
-              https://github.com/cmamon/nimble-hub-client
-            </a>
+            </p>
+            <p className={styles.alignMiddle}>
+              <img src="/images/github-icon.svg" width="20px" />
+              <a className={styles.githubLink} data-content="https://github.com/cmamon/nimble-hub-client" href="https://github.com/cmamon/nimble-hub-client">
+                https://github.com/cmamon/nimble-hub-client
+              </a>
+            </p>
+            <div className={styles.clear} />
+            <div className={styles.clear} />
+            <div className={styles.clear} />
             <p>
               <b>Serveur: </b> Application Node.JS avec Socket.IO, Express et Redis  
             </p>
-            <a href="https://github.com/cmamon/nimble-hub-server">
-              https://github.com/cmamon/nimble-hub-server
-            </a>
+            <p className={styles.alignMiddle}>
+              <img src="/images/github-icon.svg" width="20px" / >
+              <a className={styles.githubLink} data-content="https://github.com/cmamon/nimble-hub-server" href="https://github.com/cmamon/nimble-hub-server">
+                https://github.com/cmamon/nimble-hub-server
+              </a>
+            </p>
 
             <hr className={styles.sep} />
 
@@ -189,7 +198,12 @@ export default function Home() {
               <Spinner />
             </div>
             <p>
-              <a href="https://github.com/cmamon/indigenous-caribbean">
+              Carte de la Caraïbe montrant les noms indigènes des différents pays/régions.
+            </p>
+            <p> Utilisation de l'API Mapbox pour la carte.</p>
+            <p className={styles.alignMiddle}>
+              <img src="/images/github-icon.svg" width="20px" />
+              <a className={styles.githubLink} data-content="https://github.com/cmamon/indigenous-caribbean" href="https://github.com/cmamon/indigenous-caribbean">
                 https://github.com/cmamon/indigenous-caribbean
               </a>
             </p>
@@ -202,7 +216,11 @@ export default function Home() {
             </div>
 
             <p>
-              <a href="https://github.com/cmamon/cv">
+              SPA avec SSR developpée avec Next.js et déployéé sur Vercel   
+            </p>
+            <p className={styles.alignMiddle}>
+              <img src="/images/github-icon.svg" width="20px" />
+              <a className={styles.githubLink} data-content="https://github.com/cmamon/cv" href="https://github.com/cmamon/cv">
                 https://github.com/cmamon/cv
               </a>
             </p>
@@ -235,16 +253,16 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>  
+        <p className={styles.alignMiddle}>  
+          <img id="github-logo" src="/images/github-icon.svg"></img>
           <a href="https://github.com/cmamon">
-            <img className={styles.social_logo} id="github-logo" src="/images/github-mark-64px.png"></img>
-            {'  '}https://github.com/cmamon
+            https://github.com/cmamon
           </a>
         </p>
-        <p>
+        <p className={styles.alignMiddle}>
+          <img id="linkedin-logo" src="/images/linkedin-icon.svg"></img>
           <a href="https://www.linkedin.com/in/christophe-quenette">
-            <img className={styles.social_logo} id="linkedin-logo" src="/images/linkedin-logo.png"></img>
-            {'  '}@christophe-quenette
+            @christophe-quenette
           </a>
         </p>   
       </footer>

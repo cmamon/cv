@@ -40,25 +40,25 @@
   width: 100%;
   height: 100px;
   border-top: 1px solid #eaeaea;
-  text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   -webkit-box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
   box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
 }
 
+
+
 .footer img {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   height: 25px;
 }
 
 .footer a {
-  font-family: monospace;
-  font-size: 1.5rem;
-}
-
-footer .social_logo {
-  vertical-align :middle;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
 }
 
 .title {
@@ -112,7 +112,7 @@ footer .social_logo {
 }
 
 .card h3 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.8rem 0;
 }
 
 .card_title, .card_subtitle {
@@ -126,7 +126,7 @@ footer .social_logo {
 
 .card p {
   margin: 0;
-  line-height: 2rem;
+  line-height: 1.7rem;
 }
 
 .card ul {
@@ -151,43 +151,34 @@ footer .social_logo {
   flex: 50%;
 }
 
-.heading2Xl {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
+.githubLink {
+  font-family: 'Roboto Slab', serif;
+  margin-left: 0.5em;
 }
 
-.headingXl {
-  font-size: 2rem;
-  line-height: 1.3;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
+.githubLink:visited {
+  color: lightslategray;
 }
 
-.headingLg {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  margin: 1rem 0;
+.githubLink::before {
+  position: absolute;
+  content: attr(data-content);
+  color: limegreen;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 300ms ease;
 }
 
-.headingMd {
-  font-size: 1.2rem;
-  line-height: 1.5;
+.githubLink:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.alignMiddle {
+  display: flex; 
+  align-items: center;    
 }
 
 .borderCircle {
   border-radius: 9999px;
-}
-
-.colorInherit {
-  color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
 }
 
 .list {
