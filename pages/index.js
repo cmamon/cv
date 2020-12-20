@@ -81,7 +81,7 @@ export default function Home() {
           <div className={styles.card}>
             <h3>Langages objet</h3>
             <p><b>Java</b> : Réalisation d'une application Android avec back-end en Node.js</p>
-            <p><b>C++</b> : Réalisation d'un jeu</p>
+            <p><b>C++</b> : Réalisation d'un jeu, Modélisation physique de la Terre et de la Lune (OpenGL)</p>
             <p><b>C#</b> : Mise en place de Services Web</p>
           </div>
         </div>
@@ -216,7 +216,7 @@ export default function Home() {
             </div>
 
             <p>
-              SPA avec SSR developpée avec Next.js et déployéé sur Vercel   
+              SPA avec SSR developpée avec Next.js et déployée sur Vercel   
             </p>
             <p className={styles.alignMiddle}>
               <img src="/images/github-icon.svg" width="20px" />
@@ -257,6 +257,12 @@ export default function Home() {
           <img id="github-logo" src="/images/github-icon.svg"></img>
           <a href="https://github.com/cmamon">
             https://github.com/cmamon
+          </a>
+        </p>
+        <p className={styles.alignMiddle}>  
+          <img id="gitlab-logo" src="/images/gitlab-logo.svg"></img>
+          <a href="https://gitlab.com/cmamon">
+            https://gitlab.com/cmamon
           </a>
         </p>
         <p className={styles.alignMiddle}>
