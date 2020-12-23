@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 class Spinner extends React.Component {
   constructor(props) {
@@ -52,4 +52,4 @@ class Spinner extends React.Component {
   }
 }
   
-  export default Spinner
+export default Spinner
