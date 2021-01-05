@@ -1,11 +1,4 @@
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+/* Global */
 
 .main {
   width: 100%;
@@ -15,6 +8,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.sep {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  width: 90%;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.row {
+  display: flex;
+}
+
+.alignMiddle {
+  display: flex; 
+  align-items: center;    
+}
+
+/* Header */
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5rem;
+}
+
+.jobTitle {
+  line-height: 0.5;
+  font-size: 1.7rem;
 }
 
 .header {
@@ -32,68 +62,12 @@
   text-align: center;
 }
 
-.sep {
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
-  width: 90%;
-}
-
-.footer {
-  width: 100%;
-  height: 160px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
-}
-
-.footer img {
-  margin-right: 0.5rem;
-  height: 20px;
-}
-
-.footer p {
-  margin: 0 0 10px 0;
-}
-
-.footer a {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1rem;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 2.5rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 0.5;
-  font-size: 1.7rem;
-}
+/* Main */
 
 .section {
   line-height: 1.5;
   font-size: 1.4rem;
   text-align: left;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -145,15 +119,31 @@
   height: 1em;
 }
 
-.row {
-  display: flex;
-}
-
 .column {
   flex: 50%;
 }
 
+.appRow {
+  margin-bottom: 20px;
+}
+
+.appLink {
+  margin-left: 0.5em;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  background: -webkit-linear-gradient(#2FC22F, #000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.appLinkBullet {
+  font-size: 0.9rem;
+  padding-bottom: 2px;
+}
+
 .githubLink {
+  font-size: 15px;
   font-family: 'Roboto Slab', serif;
   margin-left: 0.5em;
   word-break: break-word;
@@ -175,11 +165,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.alignMiddle {
-  display: flex; 
-  align-items: center;    
-}
-
 .borderCircle {
   border-radius: 9999px;
 }
@@ -194,9 +179,40 @@
   margin: 0 0 1.25rem;
 }
 
-.lightText {
-  color: #999;
+.project {
+  margin-bottom: 1rem;
 }
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 160px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -4px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+.footer img {
+  margin-right: 0.5rem;
+  height: 20px;
+}
+
+.footer p {
+  margin: 0 0 10px 0;
+}
+
+.footer a {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+}
+
+/* Media Queries */ 
 
 @media (max-width: 500px) {
   .row {

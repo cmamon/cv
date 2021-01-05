@@ -1,5 +1,5 @@
 import Spinner from './Spinner'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/CV.module.css'
 
 const name = 'Christophe QUENETTE';
 
@@ -16,7 +16,7 @@ export default function CV() {
           />
           
           <h1 className={styles.title}>{name}</h1>
-          <p className={styles.description}>
+          <p className={styles.jobTitle}>
             Développeur Fullstack
           </p>
           <p className={styles.personal_infos}><span>christophe.quenette@gmail.com</span> &nbsp;&nbsp; <span>+33 7 50 86 74 89</span> &nbsp;&nbsp; <span>Montpellier, France</span> &nbsp;&nbsp; <span>Permis B</span></p>
@@ -61,7 +61,7 @@ export default function CV() {
           <div className={styles.card}>
             <h3>Programmation système</h3>
             <p><b>Linux</b> : Programmation système en C / Python sous Linux</p>
-            <p><b>Docker</b> : Création de conteneurs sous Windows (e.g. conteneur Redis)</p>
+            <p><b>Docker</b> : Création de conteneurs sous Windows (e.g. conteneur pour Redis)</p>
           </div>
 
           <div className={styles.card}>
@@ -75,7 +75,6 @@ export default function CV() {
         <p className={styles.section}>
           Expériences professionnelles
         </p>
-
 
         <div className={styles.grid}>
           <div className={styles.card}>
@@ -150,63 +149,104 @@ export default function CV() {
 
         <div className={styles.grid}>
           <div className={styles.card}>
-            <div className={styles.card_title}>
-              <h3>Nimble Hub</h3>
-              <Spinner />
-            </div>
+            <div className={styles.project}>
+              <div className={styles.card_title}>
+                <h3>Vitrine (exemple d'application d'e-commerce en fullstack JS)</h3>
+                <Spinner />
+              </div>
 
-            <p>
-              <b>Client: </b> Application créée avec le framework React Next.js.
-            </p>
-            <p className={styles.alignMiddle}>
-              <img src="/images/github-icon.svg" width="20px" />
-              <a className={styles.githubLink} data-content="https://github.com/cmamon/nimble-hub-client" href="https://github.com/cmamon/nimble-hub-client">
-                https://github.com/cmamon/nimble-hub-client
-              </a>
-            </p>
-            <p>
-              <b>Serveur: </b> Application Node.JS avec Socket.IO, Express et Redis  
-            </p>
-            <p className={styles.alignMiddle}>
-              <img src="/images/github-icon.svg" width="20px" />
-              <a className={styles.githubLink} data-content="https://github.com/cmamon/nimble-hub-server" href="https://github.com/cmamon/nimble-hub-server">
-                https://github.com/cmamon/nimble-hub-server
-              </a>
-            </p>
+              <div className={`${styles.alignMiddle} ${styles.appRow}`}>
+                <span className={styles.appLinkBullet}>&#9630;</span>
+                <a className={styles.appLink} href="https://vitrine.cmamon.vercel.app">
+                  https://vitrine.cmamon.vercel.app
+                </a>
+              </div>
+
+              <p>
+                <b>Client: </b> Application créée avec le framework React Next.js communiquant avec le serveur au moyen de requêtes GraphQL.
+              </p>
+              <p className={styles.alignMiddle}>
+                <img src="/images/github-icon.svg" width="20px" />
+                <a className={styles.githubLink} data-content="https://github.com/cmamon/vitrine-web" href="https://github.com/cmamon/vitrine-web">
+                  https://github.com/cmamon/vitrine-web
+                </a>
+              </p>
+              <p>
+                <b>Serveur: </b> Application Node.JS exposant un serveur GraphQL et associée à une base de données PostgreSQL.
+              </p>
+              <p className={styles.alignMiddle}>
+                <img src="/images/github-icon.svg" width="20px" />
+                <a className={styles.githubLink} data-content="https://github.com/cmamon/vitrine-server" href="https://github.com/cmamon/vitrine-server">
+                  https://github.com/cmamon/vitrine-server
+                </a>
+              </p>
+            </div>
 
             <hr className={styles.sep} />
 
-            <div className={styles.card_title}>
-              <h3>Indigenous Caribbean Map</h3>
-              <Spinner />
+            <div className={styles.project}>
+              <div className={styles.card_title}>
+                <h3>Indigenous Caribbean Map</h3>
+                <Spinner />
+              </div>
+              <p>
+                Carte de la Caraïbe montrant les noms indigènes des différents pays/régions.
+              </p>
+              <p> Utilisation de l'API Mapbox pour la carte.</p>
+              <p className={styles.alignMiddle}>
+                <img src="/images/github-icon.svg" width="20px" />
+                <a className={styles.githubLink} data-content="https://github.com/cmamon/indigenous-caribbean" href="https://github.com/cmamon/indigenous-caribbean">
+                  https://github.com/cmamon/indigenous-caribbean
+                </a>
+              </p>
             </div>
-            <p>
-              Carte de la Caraïbe montrant les noms indigènes des différents pays/régions.
-            </p>
-            <p> Utilisation de l'API Mapbox pour la carte.</p>
-            <p className={styles.alignMiddle}>
-              <img src="/images/github-icon.svg" width="20px" />
-              <a className={styles.githubLink} data-content="https://github.com/cmamon/indigenous-caribbean" href="https://github.com/cmamon/indigenous-caribbean">
-                https://github.com/cmamon/indigenous-caribbean
-              </a>
-            </p>
 
             <hr className={styles.sep} />
 
-            <div className={styles.card_title}>
-              <h3>Ce CV</h3>
-              <Spinner />
+            <div className={styles.project}>
+              <div className={styles.card_title}>
+                <h3>Nimble Hub</h3>
+                <Spinner />
+              </div>
+
+              <p>
+                <b>Client: </b> Application créée avec le framework React Next.js.
+              </p>
+              <p className={styles.alignMiddle}>
+                <img src="/images/github-icon.svg" width="20px" />
+                <a className={styles.githubLink} data-content="https://github.com/cmamon/nimble-hub-client" href="https://github.com/cmamon/nimble-hub-client">
+                  https://github.com/cmamon/nimble-hub-client
+                </a>
+              </p>
+              <p>
+                <b>Serveur: </b> Application Node.JS avec Socket.IO, Express et Redis.  
+              </p>
+              <p className={styles.alignMiddle}>
+                <img src="/images/github-icon.svg" width="20px" />
+                <a className={styles.githubLink} data-content="https://github.com/cmamon/nimble-hub-server" href="https://github.com/cmamon/nimble-hub-server">
+                  https://github.com/cmamon/nimble-hub-server
+                </a>
+              </p>
             </div>
 
-            <p>
-              SPA avec SSR developpée avec Next.js et déployée sur Vercel   
-            </p>
-            <p className={styles.alignMiddle}>
-              <img src="/images/github-icon.svg" width="20px" />
-              <a className={styles.githubLink} data-content="https://github.com/cmamon/cv" href="https://github.com/cmamon/cv">
-                https://github.com/cmamon/cv
-              </a>
-            </p>
+            <hr className={styles.sep} />
+
+            <div className={styles.project}>
+              <div className={styles.card_title}>
+                <h3>Ce CV</h3>
+                <Spinner />
+              </div>
+
+              <p>
+                SPA avec SSR developpée avec Next.js et déployée sur Vercel.
+              </p>
+              <p className={styles.alignMiddle}>
+                <img src="/images/github-icon.svg" width="20px" />
+                <a className={styles.githubLink} data-content="https://github.com/cmamon/cv" href="https://github.com/cmamon/cv">
+                  https://github.com/cmamon/cv
+                </a>
+              </p>
+            </div>
           </div>
         </div>
 
