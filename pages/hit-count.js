@@ -1,7 +1,7 @@
-import Head from 'next/head'
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
 
-import Counter from '../components/Counter.jsx'
-
+const Counter = dynamic(() => import ('../components/Counter.jsx'));
 const name = 'Christophe QUENETTE';
 
 function HitCount() {

@@ -36,6 +36,10 @@
 
 /* Header */
 
+.title, .jobTitle {
+  text-align: center;
+}
+
 .title {
   margin: 0;
   line-height: 1.15;

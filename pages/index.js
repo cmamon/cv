@@ -1,17 +1,13 @@
-import Head from 'next/head'
-import React from 'react';
+import { useEffect } from 'react';
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
 
-import CV from '../components/CV.jsx'
+const CV = dynamic(() => import ('../components/CV.jsx'));
 
 const name = 'Christophe QUENETTE';
 
-export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hits: undefined };
-  }
-
-  componentDidMount() {
+export default function Index() {
+  useEffect(() => {
     // Don't count hits on localhost
     if (process.env.NODE_ENV !== 'production') {
       return;
@@ -19,23 +15,18 @@ export default class Home extends React.Component {
 
     fetch('/api/increment-hit-count')
       .then((res) => res.json());
-  }
+  });
 
-  render () {
-    return (
-      <div className="container">
-        <Head>
-          <title>{name} - CV</title>
-          <link rel="icon" href="/favicon.ico" />
-          <meta property="og:title" content={`${name} - CV`} key="title"/>
-          <meta property="og:description" content="Curriculum Vitae de Christophe QUENETTE" key="description" />
-          <meta property="og:author" content="Christophe QUENETTE" key="author" />
-          <meta property="og:image" content="https://cv.cmamon.vercel.app/images/profile-image.jpg" />
-          <meta property="og:url" content="https://cv.cmamon.vercel.app/" key="url" />
-          <meta property="og:viewport" content="width=device-width, initial-scale=1.0" key="viewport" />
-        </Head>
-        <CV />
-      </div>
-    );
-  }
+  return (
+    <div className="container">
+      <Head>
+        <meta name="title" content={`${name} - CV`} key="title"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" key="viewport" />
+        
+        <title>{name} - CV</title>
+        <meta property="og:type" content="website" />
+      </Head>
+      <CV />
+    </div>
+  );
 }

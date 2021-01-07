@@ -1,10 +1,10 @@
-import Spinner from './Spinner'
+import dynamic from 'next/dynamic'
 import styles from '../styles/CV.module.css'
 
+const Spinner = dynamic(() => import ('./Spinner'));
 const name = 'Christophe QUENETTE';
 
 export default function CV() {
-
   return (
     <>
       <div className={styles.main}>
@@ -121,7 +121,7 @@ export default function CV() {
             <div className={styles.card_subtitle}>
               <b>Université de Montpllier</b>
               &nbsp;
-              <img className={styles.logo_um} src="/images/logo-um.png" width="30px"></img>
+              <img className={styles.logo_um} src="/images/logo-um.png" alt="Logo UM" width="30px"></img>
               &nbsp;&mdash;&nbsp; 
               <b>Septembre 2018 - Juillet 2020</b>
             </div>
@@ -134,7 +134,7 @@ export default function CV() {
             <div className={styles.card_subtitle}>
               <b>Université de Montpllier</b>
               &nbsp;
-              <img className={styles.logo_um} src="/images/logo-um.png" width="30px"></img>
+              <img className={styles.logo_um} src="/images/logo-um.png" alt="Logo UM" width="30px"></img>
               &nbsp;&mdash;&nbsp; 
               <b> Septembre 2015 - Juillet 2018</b>
             </div>
@@ -166,7 +166,7 @@ export default function CV() {
                 <b>Client: </b> Application créée avec le framework React Next.js communiquant avec le serveur au moyen de requêtes GraphQL.
               </p>
               <p className={styles.alignMiddle}>
-                <img src="/images/github-icon.svg" width="20px" />
+                <img src="/images/github-icon.svg" alt="github-icon" width="20px" />
                 <a className={styles.githubLink} data-content="https://github.com/cmamon/vitrine-web" href="https://github.com/cmamon/vitrine-web">
                   https://github.com/cmamon/vitrine-web
                 </a>
@@ -175,7 +175,7 @@ export default function CV() {
                 <b>Serveur: </b> Application Node.JS exposant un serveur GraphQL et associée à une base de données PostgreSQL.
               </p>
               <p className={styles.alignMiddle}>
-                <img src="/images/github-icon.svg" width="20px" />
+                <img src="/images/github-icon.svg" alt="github-icon" width="20px" />
                 <a className={styles.githubLink} data-content="https://github.com/cmamon/vitrine-server" href="https://github.com/cmamon/vitrine-server">
                   https://github.com/cmamon/vitrine-server
                 </a>
@@ -194,7 +194,7 @@ export default function CV() {
               </p>
               <p> Utilisation de l'API Mapbox pour la carte.</p>
               <p className={styles.alignMiddle}>
-                <img src="/images/github-icon.svg" width="20px" />
+                <img src="/images/github-icon.svg" alt="github-icon" width="20px" />
                 <a className={styles.githubLink} data-content="https://github.com/cmamon/indigenous-caribbean" href="https://github.com/cmamon/indigenous-caribbean">
                   https://github.com/cmamon/indigenous-caribbean
                 </a>
@@ -213,7 +213,7 @@ export default function CV() {
                 <b>Client: </b> Application créée avec le framework React Next.js.
               </p>
               <p className={styles.alignMiddle}>
-                <img src="/images/github-icon.svg" width="20px" />
+                <img src="/images/github-icon.svg" alt="github-icon" width="20px" />
                 <a className={styles.githubLink} data-content="https://github.com/cmamon/nimble-hub-client" href="https://github.com/cmamon/nimble-hub-client">
                   https://github.com/cmamon/nimble-hub-client
                 </a>
@@ -222,7 +222,7 @@ export default function CV() {
                 <b>Serveur: </b> Application Node.JS avec Socket.IO, Express et Redis.  
               </p>
               <p className={styles.alignMiddle}>
-                <img src="/images/github-icon.svg" width="20px" />
+                <img src="/images/github-icon.svg" alt="github-icon" width="20px" />
                 <a className={styles.githubLink} data-content="https://github.com/cmamon/nimble-hub-server" href="https://github.com/cmamon/nimble-hub-server">
                   https://github.com/cmamon/nimble-hub-server
                 </a>
@@ -241,7 +241,7 @@ export default function CV() {
                 SPA avec SSR developpée avec Next.js et déployée sur Vercel.
               </p>
               <p className={styles.alignMiddle}>
-                <img src="/images/github-icon.svg" width="20px" />
+                <img src="/images/github-icon.svg" alt="github-icon" width="20px" />
                 <a className={styles.githubLink} data-content="https://github.com/cmamon/cv" href="https://github.com/cmamon/cv">
                   https://github.com/cmamon/cv
                 </a>
@@ -259,17 +259,17 @@ export default function CV() {
             <div className={styles.card_subtitle}>
               <b>Anglais :</b>
               &nbsp;&nbsp; 
-              <img src="/images/plus.svg" width="19px"></img>&nbsp;
-              <img src="/images/plus.svg" width="19px"></img>&nbsp;
-              <img src="/images/plus.svg" width="19px"></img>&nbsp;
+              <img src="/images/plus.svg" alt="plus-icon" width="19px"></img>&nbsp;
+              <img src="/images/plus.svg" alt="plus-icon" width="19px"></img>&nbsp;
+              <img src="/images/plus.svg" alt="plus-icon" width="19px"></img>&nbsp;
             </div>
             <p>&nbsp;&mdash;&nbsp;Conversationnel</p>
             <hr className={styles.sep} />
             <div className={styles.card_subtitle}>
               <b>Espagnol :</b>
               &nbsp;&nbsp; 
-              <img src="/images/plus.svg" width="19px"></img>&nbsp;
-              <img src="/images/plus.svg" width="19px"></img>&nbsp;
+              <img src="/images/plus.svg" alt="plus-icon" width="19px"></img>&nbsp;
+              <img src="/images/plus.svg" alt="plus-icon" width="19px"></img>&nbsp;
             </div>
             <p>&nbsp;&mdash;&nbsp;Niveau scolaire</p>
           </div>
@@ -278,19 +278,19 @@ export default function CV() {
 
       <footer className={styles.footer}>
         <p className={styles.alignMiddle}>  
-          <img id="github-logo" src="/images/github-icon.svg"></img>
+          <img id="github-logo" src="/images/github-icon.svg" alt="github-icon"></img>
           <a href="https://github.com/cmamon">
             https://github.com/cmamon
           </a>
         </p>
         <p className={styles.alignMiddle}>  
-          <img id="gitlab-logo" src="/images/gitlab-logo.svg"></img>
+          <img id="gitlab-logo" src="/images/gitlab-logo.svg" alt="Gitlab logo"></img>
           <a href="https://gitlab.com/cmamon">
             https://gitlab.com/cmamon
           </a>
         </p>
         <p className={styles.alignMiddle}>
-          <img id="linkedin-logo" src="/images/linkedin-icon.svg"></img>
+          <img id="linkedin-logo" src="/images/linkedin-icon.svg" alt="Likedin logo"></img>
           <a href="https://www.linkedin.com/in/christophe-quenette">
             @christophe-quenette
           </a>

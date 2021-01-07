@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import styles from '../styles/Counter.module.css'
 
 function Counter() {
