@@ -22,7 +22,7 @@ export default function CV() {
           <p className={styles.personal_infos}><span>christophe.quenette@gmail.com</span> &nbsp;&nbsp; <span>+33 7 50 86 74 89</span> &nbsp;&nbsp; <span>Montpellier, France</span> &nbsp;&nbsp; <span>Permis B</span></p>
         </header>
 
-        <p className={styles.section}>
+        <p className={styles.section} id="skills">
           Compétences
         </p>
 
@@ -72,7 +72,7 @@ export default function CV() {
           </div>
         </div>
         
-        <p className={styles.section}>
+        <p className={styles.section} id="professional-experiences">
           Expériences professionnelles
         </p>
 
@@ -111,7 +111,7 @@ export default function CV() {
           </div>
         </div>
 
-        <p className={styles.section}>
+        <p className={styles.section} id="diplomas-and-qualifications">
           Diplômes et Formation
         </p>
 
@@ -143,7 +143,7 @@ export default function CV() {
           </div>
         </div>
 
-        <p className={styles.section}>
+        <p className={styles.section} id="ongoing-projects">
           Projets en cours de réalisation
         </p>
 
@@ -250,7 +250,7 @@ export default function CV() {
           </div>
         </div>
 
-        <p className={styles.section}>
+        <p className={styles.section} id="languages">
           Langues
         </p>
 
